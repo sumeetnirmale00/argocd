@@ -8,7 +8,7 @@ spec:
   source:
     repoURL: https://github.com/sumeetnirmale00/argocd # Replace it with your forked repo
     targetRevision: main
-    path: declarative_approach/online_shop
+    path: argocd-demos/declarative_approach/online_shop
   destination:
     server: https://kubernetes.default.svc # Replace with your Cluster Url, To get run: `argocd cluster list`
     namespace: default
