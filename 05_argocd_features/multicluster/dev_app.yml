@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/argocd-demos.git
+    repoURL: https://github.com/sumeetnirmale00/argocd.git
     targetRevision: main
-    path: ui_approach/nginx        # Path to nginx manifests
+    path: argocd-demos/ui_approach/nginx        # Path to nginx manifests
   destination:
-    server: https://kubernetes.default.svc    # from `argocd cluster list`
+    server: https://kubernetes.default.svc      # from `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:

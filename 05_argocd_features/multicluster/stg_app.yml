@@ -6,11 +6,11 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/<your-username>/argocd-demos.git
+    repoURL: https://github.com/sumeetnirmale00/argocd.git
     targetRevision: main
-    path: cli_approach/apache      # Path to apache manifests
+    path: argocd-demos/cli_approach/apache      # Path to apache manifests
   destination:
-    server: <argocd-cluster-server-url>  # from `argocd cluster list`
+    server: https://172.18.0.4:6443  # from `argocd cluster list`
     namespace: default
   syncPolicy:
     automated:
